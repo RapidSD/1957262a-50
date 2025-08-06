@@ -1,0 +1,18 @@
+name = "1957262a-50"
+main = ".open-next/worker.js"
+compatibility_date = "2025-03-25"
+compatibility_flags = ["nodejs_compat"]
+
+# Next.js with OpenNext for Cloudflare Workers
+# OpenNext handles the build process and creates the worker entry point
+
+[vars]
+# Environment variables from GitHub repository variables/secrets
+NEXT_PUBLIC_SHOPIFY_SHOP = ""
+NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN = ""
+PRIVATE_SHOPIFY_STOREFRONT_ACCESS_TOKEN = ""
+
+# Assets configuration for Next.js static files
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
